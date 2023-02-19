@@ -16,6 +16,7 @@ public class FindingObject : MonoBehaviour
     private void OnMouseDown()
     {
         Debug.Log("asd");
+        
         GameObject.Destroy(gameObject);
     }
 
@@ -26,4 +27,6 @@ public class FindingObject : MonoBehaviour
             
         }
     }
+
+    
 }
