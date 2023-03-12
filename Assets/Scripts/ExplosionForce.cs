@@ -5,12 +5,6 @@ public class ExplosionForce : MonoBehaviour
     public static float explosionForce = 500f;
     public static float explosionRadius = 40f;
 
-    private void OnMouseDown()
-    {
-        Debug.Log("asd");
-        ApplyExplosionForce();
-        GameObject.Destroy(gameObject);
-    }
     public void ApplyExplosionForce()
     {
         Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, explosionRadius);

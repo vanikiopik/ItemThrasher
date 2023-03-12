@@ -4,7 +4,7 @@ using UnityEditor.Animations;
 using UnityEngine.EventSystems;
 using UnityEngine;
 
-public class FindingObject : MonoBehaviour
+public class FindingObject : ExplosionForce
 {
 
 
@@ -13,10 +13,11 @@ public class FindingObject : MonoBehaviour
 
     }
 
+    //If clicked on Object
     private void OnMouseDown()
     {
         Debug.Log("asd");
-        
+        ApplyExplosionForce();
         GameObject.Destroy(gameObject);
     }
 
